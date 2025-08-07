@@ -14,7 +14,6 @@ export default function Meals() {
 
       const meals = await response.json();
       setloadedMeals(meals);
-      console.log(meals);
     }
 
     fetchMeals();
@@ -23,7 +22,7 @@ export default function Meals() {
   return (
     <ul id="meals">
       {loadedMeals.map((meal) => (
-        <MealItem meal={meal} />
+        <MealItem key={meal.id} meal={meal} />
       ))}
     </ul>
   );
