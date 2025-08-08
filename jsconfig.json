@@ -1,8 +1,10 @@
 {
   "compilerOptions": {
     "jsx": "react-jsx",
-    "baseUrl": "src",
-    "lib": ["dom", "esnext"]
+    "module": "esnext",
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": "./"
   },
-  "include": ["src"]
+  "exclude": ["node_modules"]
 }
