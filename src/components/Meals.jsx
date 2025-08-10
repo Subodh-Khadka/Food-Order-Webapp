@@ -12,8 +12,6 @@ export default function Meals() {
     error,
   } = useHttp("http://localhost:3000/meals", requestConfig, []);
 
-  console.log(loadedMeals);
-
   if (isLoading) {
     return <p className="center">Fetching Meals...</p>;
   }
